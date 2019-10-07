@@ -1,12 +1,22 @@
 // customization de bootstrap ici
+$theme-colors: (
+  "primary": #80deea
+);
+
+$enable-rounded: false;
+$font-family-sans-serif: "Exo", sans-serif;
+// $font-family-sans-serif: "Open Sans Condensed", sans-serif;
 
 @import "./bootstrap/bootstrap.scss";
 
 //  styles perso ici
 
-body {
 
-    background-image: url("Acceuil.jpg");
+// navbar
+.navbar {
+  opacity: 0.9;
 
-
+  .nav-item.active {
+    border-left: $white 3px solid;
+  }
 }
