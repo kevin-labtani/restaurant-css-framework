@@ -13,8 +13,9 @@
     "liveSassCompile.settings.excludeList": [
       "**/node_modules/**",
       ".vscode/**",
-      "scss/**"
+      "scss/**",
+      /*"scss/bootstrap/*[!(bootstrap-grid|bootstrap-reboot|bootstrap)].scss"*/
     ],
-    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.generateMap": false,
     "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"]
   }
