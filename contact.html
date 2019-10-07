@@ -8,7 +8,12 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- fontawesome & bootstrap recompilé + styles perso CSS -->
+    <!-- googole fonts, fontawesome & bootstrap recompilé + styles perso CSS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo|Open+Sans+Condensed:300&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
@@ -22,9 +27,11 @@
 
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
       <div class="container">
-        <a href="index.html" class="navbar-brand">A table</a>
+        <a href="index.html" class="navbar-brand"
+          ><img src="./img/ATABLEnoir.png" alt="logo A Table" height="50"
+        /></a>
         <button
           class="navbar-toggler"
           data-toggle="collapse"
@@ -35,19 +42,19 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="index.html" class="nav-link px-3">Accueil</a>
+              <a href="index.html" class="nav-link px-4">Accueil</a>
             </li>
             <li class="nav-item">
-              <a href="carte.html" class="nav-link px-3">Carte</a>
+              <a href="carte.html" class="nav-link px-4">Carte</a>
             </li>
             <li class="nav-item">
-              <a href="photos.html" class="nav-link px-3">Photos</a>
+              <a href="photos.html" class="nav-link px-4">Photos</a>
             </li>
             <li class="nav-item">
-              <a href="restaurants.html" class="nav-link px-3">Restaurants</a>
+              <a href="restaurants.html" class="nav-link px-4">Restaurants</a>
             </li>
             <li class="nav-item active">
-              <a href="contact.html" class="nav-link px-3">Contact</a>
+              <a href="contact.html" class="nav-link px-4">Contact</a>
             </li>
           </ul>
         </div>
@@ -149,10 +156,7 @@
                   <a href="#"> Politique de confidentialité</a>.
                 </label>
               </div>
-              <button
-                class="btn btn-outline-primary btn-block my-2"
-                type="submit"
-              >
+              <button class="btn btn-outline-dark btn-block my-2" type="submit">
                 <i class="fas fa-envelope-open"></i> Envoyer
               </button>
             </form>
