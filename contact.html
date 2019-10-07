@@ -17,7 +17,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
 
-    <title>A Table</title>
+    <title>Contact</title>
   </head>
 
   <body>
@@ -59,12 +59,25 @@
     <section id="contact" class="bg-light py-5">
       <div class="container">
         <div class="row">
-          <div class="col-md-9">
-            <h3>Contactez Nous</h3>
+          <div class="col text-center">
+            <h3>Contactez-Nous</h3>
             <p class="lead">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Blanditiis, laborum.
+              Vous avez une question, une suggestion, une remarque, ou une idée?
+              N'hésitez pas à nous en faire part!
             </p>
+          </div>
+        </div>
+        <div class="row">
+          <!-- 1/2 pour la photo pour taille md+ -->
+          <div class="col-md-6 align-self-center mt-5 mt-md-0">
+            <img
+              src="https://lorempixel.com/700/700/food/"
+              alt=""
+              class="img-fluid rounded-lg"
+            />
+          </div>
+          <!-- 1/2 pour le formulaire pour taille md+ -->
+          <div class="col-md-6">
             <!-- formulaire -->
             <form>
               <!-- nom et prénom -->
@@ -74,7 +87,8 @@
                   class="form-control"
                   type="text"
                   id="first-name"
-                  placeholder="Prénom"
+                  placeholder="Entrez votre prénom"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -83,7 +97,8 @@
                   class="form-control"
                   type="text"
                   id="last-name"
-                  placeholder="Nom"
+                  placeholder="Entrez votre nom"
+                  required
                 />
               </div>
               <!-- e-mail -->
@@ -94,6 +109,7 @@
                   type="email"
                   id="email"
                   placeholder="Entrez votre e-mail"
+                  required
                 />
                 <small class="form-text text-muted"
                   >Votre e-mail ne sera jamais partagé</small
@@ -101,24 +117,45 @@
               </div>
               <!-- message -->
               <div class="form-group">
-                <label for="subject">Sujet de votre message</label>
-                <select class="form-control" id="subject">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
+                <label for="topic">Message</label>
+                <select class="form-control" id="topic">
+                  <option selected>Choisissez le sujet de votre message</option>
+                  <option>Suggestion</option>
+                  <option>Remarque</option>
+                  <option>Idée</option>
                 </select>
+                <!-- pour décoller le choix de sujet du message: 
               </div>
               <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <label for="message">Message</label> -->
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  required
+                ></textarea>
               </div>
-              <button class="btn btn-primary btn-block" type="submit">
-                <span class="glyphicon glyphicon-envelope"></span>Envoyer
+              <!-- check box conditions générales -->
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="check-conditions"
+                  required
+                />
+                <label class="form-check-label" for="check-conditions">
+                  J'ai lu et accepte la
+                  <a href="#"> Politique de confidentialité</a>.
+                </label>
+              </div>
+              <button
+                class="btn btn-outline-primary btn-block my-2"
+                type="submit"
+              >
+                <i class="fas fa-envelope-open"></i> Envoyer
               </button>
             </form>
-          </div>
-          <div class="col-md-3 align-self-center">
-            <img src="./img/.png" alt="" class="img-fluid" />
           </div>
         </div>
       </div>
