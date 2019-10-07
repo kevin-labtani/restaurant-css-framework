@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- fontawesome & bootstrap recompilé + styles perso CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>A Table</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">A table</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link px-3">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="carte.html" class="nav-link px-3">Carte</a>
+            </li>
+            <li class="nav-item">
+              <a href="photos.html" class="nav-link px-3">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a href="restaurants.html" class="nav-link px-3">Restaurants</a>
+            </li>
+            <li class="nav-item active">
+              <a href="contact.html" class="nav-link px-3">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- section contact -->
+    <!-- contact -->
+    <section id="contact" class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <h3>Contactez Nous</h3>
+            <p class="lead">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Blanditiis, laborum.
+            </p>
+            <!-- formulaire -->
+            <form>
+              <!-- nom et prénom -->
+              <div class="form-group">
+                <label for="first-name">Prénom</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="first-name"
+                  placeholder="Prénom"
+                />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Nom</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="last-name"
+                  placeholder="Nom"
+                />
+              </div>
+              <!-- e-mail -->
+              <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="email"
+                  placeholder="Entrez votre e-mail"
+                />
+                <small class="form-text text-muted"
+                  >Votre e-mail ne sera jamais partagé</small
+                >
+              </div>
+              <!-- message -->
+              <div class="form-group">
+                <label for="subject">Sujet de votre message</label>
+                <select class="form-control" id="subject">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+              <button class="btn btn-primary btn-block" type="submit">
+                <span class="glyphicon glyphicon-envelope"></span>Envoyer
+              </button>
+            </form>
+          </div>
+          <div class="col-md-3 align-self-center">
+            <img src="./img/.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="main-footer" class="bg-dark text-white text-center p-3">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy; <span id="year"></span> A table</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- extra js -->
+    <script>
+      // jquery script to get the current year (eg. for copyright)
+      // use <span id="year"></span> to get the year in the html code
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
+</html>
