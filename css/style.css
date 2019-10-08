@@ -10315,3 +10315,19 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar .nav-item.active {
   border-left: #fff 3px solid;
 }
+
+#main-footer .socials a {
+  display: inline-block;
+  margin: auto 1.2rem;
+  color: #f8f9fa;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+#main-footer .socials a:hover {
+  color: #80deea;
+}
+
+#main-footer .footer-logo img {
+  border-bottom: 1px solid #80deea;
+}
