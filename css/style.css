@@ -10316,6 +10316,15 @@ a.text-dark:hover, a.text-dark:focus {
   border-left: #fff 3px solid;
 }
 
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 #main-footer .socials a {
   display: inline-block;
   margin: auto 1.2rem;

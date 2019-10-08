@@ -25,6 +25,14 @@ Vous pouvez retrouver chez nous toutes sortes de pâtisseries, des bagels, des t
 - [**Gaby Pombo**](https://github.com/Gabypml)
 - [**Christophe Ye Biname**](https://github.com/christophe-ye-biname)
 
+## Commentaires
+
+- **Kevin** (en charge de la _navbar_, du _footer_, de la page _contact_ et de ce _readme_):
+  - J'ai appris à utiliser l'attribut `required` pour avoir une validation basique de mon formulaire par le navigateur web.
+  - Suite à un audit **Google Lighthouse** de la page _contact.html_, j'ai rencontré des problèmes au niveau de l'accessibilité que j'ai résolu en rajoutant un `aria-label` au bouton qui sert de `navbar-toggler` à Bootstrap et en rajoutant un `label` avec une classe custom `hidden` au `textarea` du formulaire, un "css trick" que j'ai trouvé sur [un sité dédié à l'accessibilité](https://webaim.org/techniques/css/invisiblecontent/).
+  - De plus, suite à l'audit, j'ai rajouté un tag `meta description`.
+  - J'ai aussi appris à générer et utiliser une _favicon_.
+
 ## Langages
 
 Projet réalisé entièrement en HTML, Sass & jQuery
