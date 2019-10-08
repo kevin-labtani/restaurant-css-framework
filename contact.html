@@ -27,7 +27,9 @@
 
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-primary sticky-top border-bottom border-secondary"
+    >
       <div class="container">
         <a href="index.html" class="navbar-brand"
           ><img src="./img/ATABLEnoir.png" alt="logo A Table" height="50"
@@ -76,15 +78,15 @@
         </div>
         <div class="row">
           <!-- 1/2 pour la photo pour taille md+ -->
-          <div class="col-md-6 align-self-center mt-5 mt-md-0">
+          <div class="col-md-6 d-none d-lg-block align-self-center">
             <img
-              src="https://lorempixel.com/700/700/food/"
+              src="https://lorempixel.com/700/800/food/"
               alt=""
-              class="img-fluid rounded-lg"
+              class="img-fluid"
             />
           </div>
           <!-- 1/2 pour le formulaire pour taille md+ -->
-          <div class="col-md-6">
+          <div class="col-lg-6 bg-primary p-3">
             <!-- formulaire -->
             <form>
               <!-- nom et prénom -->
@@ -153,7 +155,9 @@
                 />
                 <label class="form-check-label" for="check-conditions">
                   J'ai lu et accepte la
-                  <a href="#"> Politique de confidentialité</a>.
+                  <a href="#" class="text-light">
+                    Politique de confidentialité</a
+                  >
                 </label>
               </div>
               <button class="btn btn-outline-dark btn-block my-2" type="submit">
