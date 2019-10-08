@@ -8,25 +8,40 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- fontawesome & bootstrap recompilé + styles perso CSS -->
+    <!-- meta description -->
+    <meta
+      name="description"
+      content="Nous sommes un petit restaurant où l'on peut bruncher avec ses amis ou bien sa famille.
+Vous pouvez retrouver chez nous toutes sortes de pâtisseries, des bagels, des toasts, des céréales et même quelques petit plats. De quoi bien manger dans une ambiance familliale."
+    />
+
+    <!-- googole fonts, fontawesome & bootstrap recompilé + styles perso CSS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo|Open+Sans+Condensed:300&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
       integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Exo&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    <title>A Table</title>
+    <title>Contact</title>
   </head>
 
-  <body class="bg-light">
+  <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-primary sticky-top border-bottom border-secondary"
+    >
       <div class="container">
         <a href="index.html" class="navbar-brand"
           ><img src="./img/ATABLEnoir.png" alt="logo A Table" height="50"
@@ -35,6 +50,7 @@
           class="navbar-toggler"
           data-toggle="collapse"
           data-target="#navbarCollapse"
+          aria-label="Navigation Bar Toggler"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -107,7 +123,7 @@
 
     <!-- Formule Breakfast -->
     <div
-      class="container container-fluid bg-secondary ml-md-auto mr-md-auto m-md-5 mt-4 mb-2 shadow-lg border border-primary"
+      class="container container-fluid ml-md-auto mr-md-auto m-md-5 mt-4 mb-2 bg-secondary border border-primary"
     >
       <div class="row">
         <div class="col-md-6 p-md-0 m-md-5 p-4">
@@ -125,7 +141,7 @@
               <h4>
                 Breakfast
                 <span class="badge badge-primary badge-pill float-right"
-                  ><small><strong>New!</strong></small></span
+                  ><small><strong>7,50€</strong></small></span
                 >
               </h4>
             </div>
@@ -142,7 +158,7 @@
 
     <!-- Formule Lunch -->
     <div
-      class="container container-fluid bg-secondary ml-md-auto mr-md-auto m-md-5 mt-4 mb-2 shadow-lg border border-primary"
+      class="container container-fluid ml-md-auto mr-md-auto m-md-5 mt-4 mb-2 bg-secondary border border-primary"
     >
       <div class="row">
         <div class="col-md-4 ml-md-5 mt-3">
@@ -150,10 +166,16 @@
             <div
               class="col-md-12 p-md-0 text-light border-bottom border-primary"
             >
-              <h4>Lunch</h4>
+              <h4>
+                <span class="badge badge-primary badge-pill float-left"
+                  ><small><strong>13,50€</strong></small></span
+                ><span class="float-right">Lunch</span>
+              </h4>
             </div>
           </div>
-          <ul class="text-light mt-md-4 pl-md-4 mt-3">
+          <ul
+            class="text-light mt-md-4 pl-md-4 mt-3 d-flex align-items-end flex-column"
+          >
             <li>Boisson</li>
             <li>Plat du jour</li>
             <li>Dessert</li>
@@ -168,7 +190,7 @@
 
     <!-- Carte détaillée -->
     <div
-      class="container border pl-md-4 pr-md-4 pt-md-2 mt-md-5 mb-md-5 mt-4 mb-4 shadow-lg border border-secondary"
+      class="container border pl-md-4 pr-md-4 pt-md-2 mt-md-5 mb-md-5 mt-4 mb-4 border border-secondary"
     >
       <div class="row px-4 pt-4">
         <h2>Carte</h2>
@@ -181,7 +203,7 @@
               <li>Soupes</li>
               <li>Sandwiches</li>
               <li>Toasts</li>
-              <li>Baggels</li>
+              <li>Bagels</li>
               <li>Tapas</li>
             </ul>
           </div>
@@ -239,10 +261,34 @@
     </div>
 
     <!-- footer -->
-    <footer id="main-footer" class="bg-dark text-white text-center p-3">
-      <div class="row">
-        <div class="col">
-          <p>Copyright &copy; <span id="year"></span> A table</p>
+    <footer id="main-footer" class="bg-dark pt-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col mt-5 mb-2">
+            <span class="footer-logo"
+              ><img src="./img/ATABLEblanc.png" alt="logo A Table" height="70"
+            /></span>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col my-2 socials">
+            <a href="#" aria-hidden="true"
+              ><i class="fab fa-tripadvisor fa-2x"></i
+            ></a>
+            <a href="#" aria-hidden="true"
+              ><i class="fab fa-facebook-f fa-2x"></i
+            ></a>
+            <a href="#" aria-hidden="true"
+              ><i class="fab fa-instagram fa-2x"></i
+            ></a>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col mt-4 ">
+            <p class="text-muted mb-0">
+              Copyright &copy; <span id="year"></span> A Table
+            </p>
+          </div>
         </div>
       </div>
     </footer>
