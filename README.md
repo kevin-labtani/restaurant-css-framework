@@ -16,7 +16,7 @@ Le projet est réalisé sur base des [instructions données](https://github.com/
 Le Projet consite en un site Bootstrap de 5 pages, pésentant notre concept de restaurant nommé **A Table**.
 
 _Nous sommes un petit restaurant où l'on peut bruncher avec ses amis ou bien sa famille.
-Vous pouvez retrouver chez nous toutes sortes de pâtisseries, des beagles, des tartines, des céréales et même quelques petit plats. De quoi bien manger dans une ambiance familliale_.
+Vous pouvez retrouver chez nous toutes sortes de pâtisseries, des bagels, des toasts, des céréales et même quelques petit plats. De quoi bien manger dans une ambiance familliale_.
 
 ## Contributeurs
 
