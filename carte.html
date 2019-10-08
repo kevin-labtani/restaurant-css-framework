@@ -15,134 +15,227 @@
       integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>A Table</title>
   </head>
-  <body>
+
+  <body class="bg-light">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-            <div class="container">
-              <a href="index.html" class="navbar-brand">A table</a>
-              <button
-                class="navbar-toggler"
-                data-toggle="collapse"
-                data-target="#navbarCollapse"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a href="index.html" class="nav-link px-3">Accueil</a>
-                  </li>
-                  <li class="nav-item active">
-                    <a href="carte.html" class="nav-link px-3">Carte</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="photos.html" class="nav-link px-3">Photos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="restaurants.html" class="nav-link px-3">Restaurants</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="contact.html" class="nav-link px-3">Contact</a>
-                  </li>
+    <nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"
+          ><img src="./img/ATABLEnoir.png" alt="logo A Table" height="50"
+        /></a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link px-4">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="carte.html" class="nav-link px-4">Carte</a>
+            </li>
+            <li class="nav-item">
+              <a href="photos.html" class="nav-link px-4">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a href="restaurants.html" class="nav-link px-4">Restaurants</a>
+            </li>
+            <li class="nav-item active">
+              <a href="contact.html" class="nav-link px-4">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- list-groups & badges -->
+
+    <!--<div class="container bg-light">
+      <ul class="list-group m-0 p-0">
+        <li
+          class="list-group-item list-group-item-action flex-column align-items-start bg-secondary mt-5 p-5 shadow-lg"
+        >
+          <img
+            src="img/breakfast03.jpg"
+            class="img-fluid w-50 float-left mr-5 shadow-lg"
+            alt="Breakfast"
+          />
+          <h4 class="p-3 m-0 text-dark border">
+            Breakfast
+            <span class="badge badge-primary badge-pill float-right"
+              ><small><strong>New!</strong></small></span
+            >
+          </h4>
+          <ul class="text-dark mt-md-4">
+            <li>Boisson chaude</li>
+            <li>Boison fraîche</li>
+            <li>Fruits frais</li>
+            <li>Viennoiserie</li>
+          </ul>
+        </li> 
+        <li
+          class="list-group-item list-group-item-action flex-column align-items-start bg-secondary mt-5 p-5 shadow-lg"
+        >
+          <img
+            src="img/lunch02.jpg"
+            class="img-fluid w-50 float-right shadow-lg"
+            alt="Lunch"
+          />
+          <h4 class="p-3 m-0 pl-md-4 text-dark border">Lunch</h4>
+          <ul class="text-dark mt-md-4 pl-md-4">
+            <li>Boisson</li>
+            <li>Plat du jour</li>
+            <li>Dessert</li>
+            <li>Café</li>
+          </ul>
+        </li>
+      </ul> -->
+
+    <!-- Menus -->
+
+    <!-- Formule Breakfast -->
+    <div
+      class="container container-fluid bg-secondary ml-md-auto mr-md-auto m-md-5 mt-4 mb-2 shadow-lg border border-primary"
+    >
+      <div class="row">
+        <div class="col-md-6 p-md-0 m-md-5 p-4">
+          <img
+            src="img/breakfast03.jpg"
+            class="img-fluid shadow-lg"
+            alt="Breakfast"
+          />
+        </div>
+        <div class="col-md-4">
+          <div class="row pt-md-5">
+            <div
+              class="col-md-12 p-md-0 text-light border-bottom border-primary"
+            >
+              <h4>
+                Breakfast
+                <span class="badge badge-primary badge-pill float-right"
+                  ><small><strong>New!</strong></small></span
+                >
+              </h4>
+            </div>
+          </div>
+          <ul class="text-light mt-md-4 pl-md-4 mt-3">
+            <li>Boisson chaude</li>
+            <li>Boison fraîche</li>
+            <li>Fruits frais</li>
+            <li>Viennoiserie</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formule Lunch -->
+    <div
+      class="container container-fluid bg-secondary ml-md-auto mr-md-auto m-md-5 mt-4 mb-2 shadow-lg border border-primary"
+    >
+      <div class="row">
+        <div class="col-md-4 ml-md-5 mt-3">
+          <div class="row pt-md-5">
+            <div
+              class="col-md-12 p-md-0 text-light border-bottom border-primary"
+            >
+              <h4>Lunch</h4>
+            </div>
+          </div>
+          <ul class="text-light mt-md-4 pl-md-4 mt-3">
+            <li>Boisson</li>
+            <li>Plat du jour</li>
+            <li>Dessert</li>
+            <li>Café</li>
+          </ul>
+        </div>
+        <div class="col-md-6 p-md-0 m-md-5 p-4">
+          <img src="img/lunch02.jpg" class="img-fluid shadow-lg" alt="Lunch" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Carte détaillée -->
+    <div
+      class="container border pl-md-4 pr-md-4 pt-md-2 mt-md-5 mb-md-5 mt-4 mb-4 shadow-lg border border-secondary"
+    >
+      <div class="row px-4 pt-4">
+        <h2>Carte</h2>
+      </div>
+      <div class="row pl-md-5 pr-md-5">
+        <div class="col-md-4">
+          <div class="col-md-12 border border-primary mt-2">
+            <h5 class="m-2">Petite restauration</h5>
+            <ul>
+              <li>Soupes</li>
+              <li>Sandwiches</li>
+              <li>Toasts</li>
+              <li>Baggels</li>
+              <li>Tapas</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="col-md-12 border border-primary mt-2">
+            <h5 class="m-2">Plats</h5>
+            <ul>
+              <li>Salades</li>
+              <li>Bowls</li>
+              <li>Pâtes</li>
+              <li>Pizzas</li>
+              <li>Burgers</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="col-md-12 border border-primary mt-2">
+            <h5 class="m-2">Desserts</h5>
+            <ul class="pb-md-4">
+              <li>Milkshake</li>
+              <li>Patisseries</li>
+              <li>Pancakes</li>
+              <li>Glaces</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row p-md-5">
+        <div class="col-md-12">
+          <div class="col-md-12 border border-primary mt-2 mb-2">
+            <h5 class="m-md-2">Boissons</h5>
+            <div class="row">
+              <div class="col-md-4">
+                <ul>
+                  <li>Softs</li>
+                  <li>Jus frais</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li>Belgian beers</li>
+                  <li>Coktails</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li>Boissons chaudes</li>
                 </ul>
               </div>
             </div>
-          </nav>
-
-    <!-- list-groups & badges -->
-    <div class="container">
-
-        <!-- Menus -->
-        <ul class="list-group">
-
-            <!-- Formule Breakfast -->
-            <li class="list-group-item list-group-item-action flex-column align-items-start">
-                <img src="https://via.placeholder.com/444x296" class="img-fluid w-50 float-left mr-5" alt="Breakfast">
-                <h5 class="p-4 m-0">Breakfast<span class="badge badge-primary badge-pill float-right">New!</span></h5>
-                <ul>
-                    <li>Boisson chaude</li>
-                    <li>Boison fraîche</li>
-                    <li>Fruits frais</li>
-                    <li>Viennoiserie</li>
-                </ul>
-            </li>
-
-            <!-- Formule Lunch -->
-            <li class="list-group-item list-group-item-action flex-column align-items-start">
-                <img src="https://via.placeholder.com/444x296" class="img-fluid w-50 float-right mr-2" alt="Lunch">
-                <h5 class="p-4 m-0 ml-3">Lunch</h5>
-                <ul>
-                    <li>Boisson</li>
-                    <li>Plat du jour</li>
-                    <li>Dessert</li>
-                    <li>Café</li>
-                </ul>
-            </li>
-        </ul>
-
-        <!-- Carte détaillée -->
-        <div class="container border pl-5 pt-3">
-            <div class="row">
-                <h2>Carte</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <h5 class="m-2">Petite restauration</h5>
-                    <ul>
-                        <li>Soupes</li>
-                        <li>Sandwiches</li>
-                        <li>Toasts</li>
-                        <li>Baggels</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="m-2">Plats</h5>
-                    <ul>
-                        <li>Salades</li>
-                        <li>Bowls</li>
-                        <li>Pâtes</li>
-                        <li>Burgers</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="m-2">Desserts</h5>
-                    <ul>
-                        <li>Milkshake</li>
-                        <li>Patisseries</li>
-                        <li>Pancakes</li>
-                        <li>Glaces</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h5 class="m-2">Boissons</h5>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <ul>
-                                <li>Softs</li>
-                                <li>Jus frais</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <ul>
-                                <li>Belgian beers</li>
-                                <li>Coktails</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <ul>
-                                <li>Boissons chaudes</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- footer -->
@@ -170,6 +263,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
     <!-- extra js -->
     <script>
       // jquery script to get the current year (eg. for copyright)
