@@ -10317,7 +10317,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .image {
-  background-image: url(/img/Fond2.jpg);
+  background-image: url("../img/Fond2.jpg");
   height: 700px;
 }
 
