@@ -15,11 +15,13 @@
       integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>A Table</title>
   </head>
-  <body>
+  <body class="bg-light">
      <!-- navbar -->
      <nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
         <div class="container">
@@ -56,19 +58,18 @@
       </nav>
 
     <!--ACCEUIL-->
-    <div class="jumbotron jumbotron-fluid p-0 m-0 ">
+    <div class="jumbotron jumbotron-fluid p-0 m-0">
       <div class="container-fluid p-0 m-0">
   
-            <div class="image" style="background-image: url(Fond2.jpg);">
+            <div class="image"> 
                 <div class="text-white text-center rgba-stylish-strong py-5 px-4">
                   <div class="py-5">
         
-                  <!--TEST HAUT BAS-->
-        
-                  <img src="ATABLEblanc.png" alt="logo">
-                  <h2 class="card-title h2 my-4 py-2">Un brunch en toute sérénité. </h2>
-                  <p class="mb-4 pb-2 px-md-5 mx-md-5">Rien de mieux qu'être A TABLE pour passer une bonne journée.</p>
-                  
+                    <div class="logo">
+                      <img src="/img/ATABLEblanc.png" alt="logo" class="mt-4 img-fluid">
+                      <h2 class="card-title h2 mt-5 mb-0">Un brunch en toute sérénité. </h2>
+                      <p class="mb-5 pb-3 px-md-5 mx-md-5 mt-0">Rien de mieux qu'être A TABLE pour passer une bonne journée.</p>
+                    </div>
             
                   </div>
                 </div>
@@ -76,17 +77,48 @@
       
       </div>
     </div>
+  <!--CARTE DE L'ACCEUIL-->
+   
 
-
-
-
-    <!-- footer -->
-    <footer id="main-footer" class="bg-dark text-white text-center p-3">
+  <div class="card pt-0 mt-5 mb-5 border border-primary" style="width: 100vw">
       <div class="row">
-        <div class="col">
-          <p>Copyright &copy; <span id="year"></span> A table</p>
+        <div class="col-md-6">
+          <img src="img/Acceuil.jpg" class="card-img" alt="Breakfast">
+        </div>
+        <div class="col-md-4 text-justify">
+          <div class="card-body">
+            <h4 class="card-title text-dark mt-5">A propos de nous</h4>
+            <p class="card-text text-dark">Nous sommes un petit restaurant où l'on peut bruncher avec ses amis ou bien sa famille.
+              Vous pouvez retrouver chez nous toutes sortes de pâtisseries, des beagles, des tartines, des céréales et même quelques petit plats. De quoi bien manger dans une ambiance familliale 
+            </p>
+          </div>
         </div>
       </div>
+    </div>
+
+  <!--DEUXIEME CARTE ACCEUIL-->
+
+
+
+  <div class="card mb-5 border border-primary" style="width: 100vw;">
+      <div class="row">
+        <div class="col-md-4 offset-md-2 text-justify">
+          <div class="card-body">
+            <h4 class="card-title text-dark text-right mt-5">Pourquoi des brunchs?</h4>
+            <p class="card-text text-dark ">L'idée vient du fait qu'on ne prend jamais le temps, et encore moins le matin! 
+              Du coup nous aimons l'idée du brunch.
+              Faire un petit-déjeuner et un dinner en même temps, pouvoir manger sucré ou salé, prendre le temps de bien manger... 
+              Ce sont les arguments qui nous a amenés à ouvrir ce restaurant.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <img src="img/Restaurant.jpg" class="card-img" alt="Breakfast">
+          </div>
+      </div>
+    </div>
+
+
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

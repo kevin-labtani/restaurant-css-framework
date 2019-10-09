@@ -10315,3 +10315,8 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar .nav-item.active {
   border-left: #fff 3px solid;
 }
+
+.image {
+  background-image: url(/img/Fond2.jpg);
+  height: 700px;
+}
