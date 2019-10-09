@@ -8,54 +8,74 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- fontawesome & bootstrap recompilé + styles perso CSS -->
+    <!-- meta description -->
+    <meta
+      name="description"
+      content="Nous sommes un petit restaurant où l'on peut bruncher avec ses amis ou bien sa famille.
+Vous pouvez retrouver chez nous toutes sortes de pâtisseries, des bagels, des toasts, des céréales et même quelques petit plats. De quoi bien manger dans une ambiance familliale."
+    />
+
+    <!-- googole fonts, fontawesome & bootstrap recompilé + styles perso CSS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo|Open+Sans+Condensed:300&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
       integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-    <title>A Table</title>
+    <title>Contact</title>
   </head>
-  <body class="bg-light">
-     <!-- navbar -->
-     <nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
-        <div class="container">
-          <a href="index.html" class="navbar-brand"
-            ><img src="./img/ATABLEnoir.png" alt="logo A Table" height="50"
-          /></a>
-          <button
-            class="navbar-toggler"
-            data-toggle="collapse"
-            data-target="#navbarCollapse"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a href="index.html" class="nav-link px-4">Accueil</a>
-              </li>
-              <li class="nav-item">
-                <a href="carte.html" class="nav-link px-4">Carte</a>
-              </li>
-              <li class="nav-item">
-                <a href="photos.html" class="nav-link px-4">Photos</a>
-              </li>
-              <li class="nav-item">
-                <a href="restaurants.html" class="nav-link px-4">Restaurants</a>
-              </li>
-              <li class="nav-item">
-                <a href="contact.html" class="nav-link px-4">Contact</a>
-              </li>
-            </ul>
-          </div>
+
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-primary sticky-top border-bottom border-secondary"
+    >
+      <div class="container">
+        <a href="index.html" class="navbar-brand"
+          ><img src="./img/ATABLEnoir.png" alt="logo A Table" height="50"
+        /></a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-label="Navigation Bar Toggler"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link px-4">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="carte.html" class="nav-link px-4">Carte</a>
+            </li>
+            <li class="nav-item">
+              <a href="photos.html" class="nav-link px-4">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a href="restaurants.html" class="nav-link px-4">Restaurants</a>
+            </li>
+            <li class="nav-item active">
+              <a href="contact.html" class="nav-link px-4">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+
 
     <!--ACCEUIL-->
     <div class="jumbotron jumbotron-fluid p-0 m-0">
@@ -118,7 +138,37 @@
       </div>
     </div>
 
-
+   <!-- footer -->
+   <footer id="main-footer" class="bg-dark pt-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col mt-5 mb-2">
+            <span class="footer-logo"
+              ><img src="./img/ATABLEblanc.png" alt="logo A Table" height="70"
+            /></span>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col my-2 socials">
+            <a href="#" aria-label="link to Trip Advisor"
+              ><i aria-hidden="true" class="fab fa-tripadvisor fa-2x"></i
+            ></a>
+            <a href="#" aria-label="link to Facebook"
+              ><i aria-hidden="true" class="fab fa-facebook-f fa-2x"></i
+            ></a>
+            <a href="#" aria-label="link to Instagram"
+              ><i aria-hidden="true" class="fab fa-instagram fa-2x"></i
+            ></a>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col mt-4 ">
+            <p class="text-muted mb-0">
+              Copyright &copy; <span id="year"></span> A Table
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -145,3 +195,5 @@
     </script>
   </body>
 </html>
+
+ 
