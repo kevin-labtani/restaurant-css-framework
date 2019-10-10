@@ -33,6 +33,8 @@ Vous pouvez retrouver chez nous toutes sortes de pâtisseries, des bagels, des t
   - De plus, suite à l'audit, j'ai rajouté un tag `meta description`.
   - J'ai aussi appris à générer et utiliser une _favicon_.
 
+- **Christophe** (en charge de la gallerie):
+  - J'ai appris un faire un carousel avec bootstrap et à y apporter certaines modifications.
 ## Langages
 
 Projet réalisé entièrement en HTML, Sass & jQuery
