@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- meta description -->
+    <meta
+      name="description"
+      content="Nous sommes un petit restaurant où l'on peut bruncher avec ses amis ou bien sa famille.
+Vous pouvez retrouver chez nous toutes sortes de pâtisseries, des bagels, des toasts, des céréales et même quelques petit plats. De quoi bien manger dans une ambiance familliale."
     />
 
     <!-- googole fonts, fontawesome & bootstrap recompilé + styles perso CSS -->
@@ -21,13 +28,20 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <title>Contact</title>
   </head>
 
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-primary sticky-top border-bottom border-secondary"
+    >
       <div class="container">
         <a href="index.html" class="navbar-brand"
           ><img src="./img/ATABLEnoir.png" alt="logo A Table" height="50"
@@ -35,11 +49,12 @@
         <button
           class="navbar-toggler"
           data-toggle="collapse"
-          data-target="#navbarCollapse"
+          data-target="#navbar-collapse"
+          aria-label="Navigation Bar Toggler"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a href="index.html" class="nav-link px-4">Accueil</a>
@@ -62,12 +77,13 @@
     </nav>
 
     <!-- section contact -->
-    <!-- contact -->
     <section id="contact" class="bg-light py-5">
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <h3>Contactez-Nous</h3>
+            <h3>
+              <span class="border-bottom border-primary">Contactez-Nous</span>
+            </h3>
             <p class="lead">
               Vous avez une question, une suggestion, une remarque, ou une idée?
               N'hésitez pas à nous en faire part!
@@ -75,16 +91,16 @@
           </div>
         </div>
         <div class="row">
-          <!-- 1/2 pour la photo pour taille md+ -->
-          <div class="col-md-6 align-self-center mt-5 mt-md-0">
+          <!-- 1/2 pour la photo pour taille lg+, pas d'image pour les tailles en dessous -->
+          <div class="col-lg-6 d-none d-lg-block align-self-center">
             <img
-              src="https://lorempixel.com/700/700/food/"
-              alt=""
-              class="img-fluid rounded-lg"
+              src="./img/plat-contact.png"
+              alt="image de plat servi au restaurant"
+              class="img-fluid"
             />
           </div>
-          <!-- 1/2 pour le formulaire pour taille md+ -->
-          <div class="col-md-6">
+          <!-- 1/2 pour le formulaire pour taille lg+, full size pour les tailles en dessous -->
+          <div class="col-lg-6 bg-primary p-3">
             <!-- formulaire -->
             <form>
               <!-- nom et prénom -->
@@ -131,10 +147,7 @@
                   <option>Remarque</option>
                   <option>Idée</option>
                 </select>
-                <!-- pour décoller le choix de sujet du message: 
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label> -->
+                <label for="message" class="hidden">Message</label>
                 <textarea
                   class="form-control"
                   id="message"
@@ -142,21 +155,25 @@
                   required
                 ></textarea>
               </div>
-              <!-- check box conditions générales -->
-              <div class="form-check">
+              <!-- checkbox conditions générales -->
+              <div class="custom-control custom-checkbox">
                 <input
-                  class="form-check-input"
                   type="checkbox"
-                  value=""
+                  class="custom-control-input"
                   id="check-conditions"
                   required
                 />
-                <label class="form-check-label" for="check-conditions">
+                <label class="custom-control-label" for="check-conditions">
                   J'ai lu et accepte la
-                  <a href="#"> Politique de confidentialité</a>.
+                  <a href="#" class="text-light">
+                    Politique de confidentialité</a
+                  >
                 </label>
               </div>
-              <button class="btn btn-outline-dark btn-block my-2" type="submit">
+              <button
+                class="btn btn-outline-dark btn-block my-4 my-lg-2"
+                type="submit"
+              >
                 <i class="fas fa-envelope-open"></i> Envoyer
               </button>
             </form>
@@ -166,10 +183,34 @@
     </section>
 
     <!-- footer -->
-    <footer id="main-footer" class="bg-dark text-white text-center p-3">
-      <div class="row">
-        <div class="col">
-          <p>Copyright &copy; <span id="year"></span> A table</p>
+    <footer id="main-footer" class="bg-dark pt-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col mt-5 mb-2">
+            <span class="footer-logo"
+              ><img src="./img/ATABLEblanc.png" alt="logo A Table" height="70"
+            /></span>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col my-2 socials">
+            <a href="#" aria-label="link to Trip Advisor"
+              ><i aria-hidden="true" class="fab fa-tripadvisor fa-2x"></i
+            ></a>
+            <a href="#" aria-label="link to Facebook"
+              ><i aria-hidden="true" class="fab fa-facebook-f fa-2x"></i
+            ></a>
+            <a href="#" aria-label="link to Instagram"
+              ><i aria-hidden="true" class="fab fa-instagram fa-2x"></i
+            ></a>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col mt-4 ">
+            <p class="text-muted mb-0">
+              Copyright &copy; <span id="year"></span> A Table
+            </p>
+          </div>
         </div>
       </div>
     </footer>

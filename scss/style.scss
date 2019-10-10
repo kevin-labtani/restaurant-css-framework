@@ -1,4 +1,4 @@
-// customization de bootstrap ici
+// customization de bootstrap
 $theme-colors: (
   "primary": #80deea
 );
@@ -34,6 +34,10 @@ $font-family-sans-serif: "Exo", sans-serif;
   font-family: "Exo", sans-serif;
   margin-top: 2%;
 }
+//  styles perso
+
+// variables
+$primary-color: #80deea;
 
 // navbar
 .navbar {
@@ -44,3 +48,34 @@ $font-family-sans-serif: "Exo", sans-serif;
   }
 }
 
+// Contact
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+//  footer
+#main-footer {
+  .socials {
+    a {
+      display: inline-block;
+      margin: auto 1.2rem;
+      color: $light;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .footer-logo {
+    img {
+      border-bottom: 1px solid $primary-color;
+    }
+  }
+}
