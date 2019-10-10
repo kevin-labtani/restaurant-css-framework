@@ -1,6 +1,7 @@
 // customization de bootstrap
 $theme-colors: (
-  "primary": #80deea
+  "primary": #80deea,
+  "secondary": #b0bec5
 );
 
 $enable-rounded: false;
@@ -38,6 +39,8 @@ $font-family-sans-serif: "Exo", sans-serif;
 
 // variables
 $primary-color: #80deea;
+$secondary-color: #b0bec5;
+
 
 // navbar
 .navbar {
@@ -45,6 +48,34 @@ $primary-color: #80deea;
 
   .nav-item.active {
     border-left: $white 3px solid;
+  }
+}
+
+
+//ACCEUIL
+
+.image {
+
+  background-image: url("../img/Fond2.jpg");
+  height: 700px;
+
+}
+
+// Restaurant
+
+.mapBox {
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition-delay: 0.5s;
+  &:hover {
+    border: 1px solid $secondary-color;
+  }
+}
+
+.mapImg {
+  transition: transform 1s;
+  &:hover {
+    transform: scale(2);
   }
 }
 
@@ -79,3 +110,4 @@ $primary-color: #80deea;
     }
   }
 }
+

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- meta description -->
+    <meta
+      name="description"
+      content="Nous sommes un petit restaurant où l'on peut bruncher avec ses amis ou bien sa famille.
+Vous pouvez retrouver chez nous toutes sortes de pâtisseries, des bagels, des toasts, des céréales et même quelques petit plats. De quoi bien manger dans une ambiance familliale."
+    />
+
+    <!-- googole fonts, fontawesome & bootstrap recompilé + styles perso CSS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo|Open+Sans+Condensed:300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <title>Restaurants</title>
+  </head>
+
+  <body class="bg-light">
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-primary sticky-top border-bottom border-secondary"
+    >
+      <div class="container">
+        <a href="index.html" class="navbar-brand"
+          ><img src="./img/ATABLEnoir.png" alt="logo A Table" height="50"
+        /></a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-label="Navigation Bar Toggler"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link px-4">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a href="carte.html" class="nav-link px-4">Carte</a>
+            </li>
+            <li class="nav-item">
+              <a href="photos.html" class="nav-link px-4">Photos</a>
+            </li>
+            <li class="nav-item active">
+              <a href="restaurants.html" class="nav-link px-4">Restaurants</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link px-4">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Localisation -->
+
+    <div class="container container-fluid">
+      <div class="row">
+        <div class="col-md-5 offset-md-1 my-md-5">
+          <div class="col-md-12">
+            <div class="card p-md-3 p-3 my-3 border border-secondary">
+              <div class="mapBox rounded-circle">
+                <img
+                  class="mapImg card-img-top img-fluid"
+                  id="mapCharleroi"
+                  src="./img/mapCharleroi.jpg"
+                  alt="map topo Charleroi"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title pb-md-2 border-bottom border-primary">
+                  Charleroi
+                </h3>
+                <div class="h6 mb-md-3 my-3">
+                  <h6>Avenue du Hipster, 96</h6>
+                  <h6>6000 Charleroi</h6>
+                  <h6>Belgique</h6>
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item bg-light">Mar. - Dim.</li>
+                  <li class="list-group-item bg-light">8:00 - 15:00</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 my-md-5">
+          <div class="col-md-12">
+            <div class="card p-md-3 p-3 my-3 border border-secondary">
+              <div class="mapBox rounded-circle">
+                <img
+                  class="mapImg card-img-top img-fluid"
+                  id="mapBrussels"
+                  src="./img/mapBrussels.jpg"
+                  alt="map topo Brussels"
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title pb-md-2 border-bottom border-primary">
+                  Bruxelles
+                </h3>
+                <div class="h6 mb-md-3 my-3">
+                  <h6>Chaussée du babos, 69</h6>
+                  <h6>1000 Bruxelles</h6>
+                  <h6>Belgium</h6>
+                </div>
+                <ul class="list-group mt-mb-2">
+                  <li class="list-group-item bg-light">Mar. - Dim.</li>
+                  <li class="list-group-item bg-light">8:00 - 15:00</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer id="main-footer" class="bg-dark pt-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col mt-5 mb-2">
+            <span class="footer-logo"
+              ><img src="./img/ATABLEblanc.png" alt="logo A Table" height="70"
+            /></span>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col my-2 socials">
+            <a href="#" aria-label="link to Trip Advisor"
+              ><i aria-hidden="true" class="fab fa-tripadvisor fa-2x"></i
+            ></a>
+            <a href="#" aria-label="link to Facebook"
+              ><i aria-hidden="true" class="fab fa-facebook-f fa-2x"></i
+            ></a>
+            <a href="#" aria-label="link to Instagram"
+              ><i aria-hidden="true" class="fab fa-instagram fa-2x"></i
+            ></a>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col mt-4 ">
+            <p class="text-muted mb-0">
+              Copyright &copy; <span id="year"></span> A Table
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- extra js -->
+    <script>
+      // jquery script to get the current year (eg. for copyright)
+      // use <span id="year"></span> to get the year in the html code
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
+</html>
