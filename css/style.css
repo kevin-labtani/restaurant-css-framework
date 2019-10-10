@@ -10329,7 +10329,7 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 100%;
   line-height: 30px;
   color: #fff;
-  background-color: blue;
+  /*background-color: blue;*/
 }
 
 .carousel-indicators li.active {
