@@ -28,10 +28,17 @@ Vous pouvez retrouver chez nous toutes sortes de pâtisseries, des bagels, des t
 ## Commentaires
 
 - **Kevin** (en charge de la _navbar_, du _footer_, de la page _contact_ et de ce _readme_):
+
   - J'ai appris à utiliser l'attribut `required` pour avoir une validation basique de mon formulaire par le navigateur web.
   - Suite à un audit **Google Lighthouse** de la page _contact.html_, j'ai rencontré des problèmes au niveau de l'accessibilité que j'ai résolu en rajoutant un attribut `aria-label` au bouton qui sert de `navbar-toggler` à Bootstrap, en rajoutant un `label` avec une classe custom `hidden` au `textarea` du formulaire, un "css trick" que j'ai trouvé sur [un sité dédié à l'accessibilité](https://webaim.org/techniques/css/invisiblecontent/), et en rajoutant un attribut `aria-hidden="true"` aux liens sociaux presents dans le footer.
   - De plus, suite à l'audit, j'ai rajouté un tag `meta description`.
   - J'ai aussi appris à générer et utiliser une _favicon_.
+
+- **Denis** (en charge de la page _carte_ et de la page _restaurants_):
+  - J'ai utilisé pour ces pages un mélange de _container_, _lists-groups_ et de _cards_. Bien qu'étant un peu limité par les standards _bootstrap_, le résultat reste bon.
+  - L'audit **Google Lighthouse** a montré de bons résultats dans l'ensemble, le validateur **W3C** a jugé la sémantique correcte.
+  - L'utilisation de **git** se passe bien dans l'ensemble, (à màj après merge dans master...)
+  - Attention à la compréhension des consignes pour ma part (nom du repo, utilisation des _list-groups_ à mauvais escient, ...)
 
 ## Langages
 

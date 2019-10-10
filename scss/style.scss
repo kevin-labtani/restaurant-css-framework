@@ -24,6 +24,40 @@ $primary-color: #80deea;
   }
 }
 
+// Restaurants
+
+#mapBoxCharleroi {
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: border 2s;
+  &:hover {
+    border: 1px solid grey;
+  }
+}
+
+#mapCharleroi {
+  transition: transform 1s;
+  &:hover {
+    transform: scale(2);
+  }
+}
+
+#mapBoxBrussels {
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: border 2s;
+  &:hover {
+    border: 1px solid grey;
+  }
+}
+
+#mapBrussels {
+  transition: transform 1s;
+  &:hover {
+    transform: scale(2);
+  }
+}
+
 // Contact
 .hidden {
   position: absolute;
