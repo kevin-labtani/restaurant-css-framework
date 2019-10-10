@@ -39,6 +39,7 @@ Vous pouvez retrouver chez nous toutes sortes de pâtisseries, des bagels, des t
   - L'audit **Google Lighthouse** a montré de bons résultats dans l'ensemble, le validateur **W3C** a jugé la sémantique correcte.
   - L'utilisation de **git** se passe bien dans l'ensemble, (à màj après merge dans master...)
   - Attention à la compréhension des consignes pour ma part (nom du repo, utilisation des _list-groups_ à mauvais escient, ...)
+  - Penser à limiter le nombre de "Hacks" utilisé pour parvenir à un résultat attendu.
 
 ## Langages
 
