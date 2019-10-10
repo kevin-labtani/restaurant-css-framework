@@ -26,10 +26,13 @@ $secondary-color: #b0bec5;
 }
 
 //carousel
+
+$primary-color: #80deea;
+
 .carousel-item {
   /*border: solid 5px;*/
   padding: 10%;
-  border: solid 1px #80deea;
+  border: solid 1px $primary-color;
 }
 .carousel-indicators li {
   text-indent: 0.7em;
@@ -39,7 +42,7 @@ $secondary-color: #b0bec5;
   line-height: 30px;
 
   color: #fff;
-  background-color: blue;
+  /*background-color: blue;*/
   &.active {
     background-color: #b3e5fc;
   }
