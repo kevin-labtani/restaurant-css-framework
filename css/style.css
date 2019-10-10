@@ -10308,6 +10308,33 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+.carousel-item {
+  /*border: solid 5px;*/
+  padding: 10%;
+  border: solid 1px #80deea;
+}
+
+.carousel-indicators li {
+  text-indent: 0;
+  margin: 0 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  line-height: 30px;
+  color: #fff;
+  background-color: blue;
+}
+
+.carousel-indicators li.active {
+  background-color: #b3e5fc;
+}
+
+.col-md-2 {
+  font-size: 3em;
+  font-family: "Exo", sans-serif;
+  margin-top: 2%;
+}
+
 .navbar {
   opacity: 0.9;
 }

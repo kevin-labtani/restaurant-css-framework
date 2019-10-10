@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- fontawesome & bootstrap recompilé + styles perso CSS -->
+    <link 
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+        integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+        crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>A Table</title>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                A table
+            </a>
+        <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                <a href="index.html" class="nav-link px-3">Accueil</a>
+                </li>
+                <li class="nav-item">
+                <a href="carte.html" class="nav-link px-3">Carte</a>
+                </li>
+                <li class="nav-item">
+                <a href="photos.html active" class="nav-link px-3">Photos</a>
+                </li>
+                <li class="nav-item">
+                <a href="restaurants.html" class="nav-link px-3">Restaurants</a>
+                </li>
+                <li class="nav-item">
+                <a href="contact.html" class="nav-link px-3">Contact</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>  
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 offset-md-5 ">
+                Gallerie
+            </div>
+        </div>
+        <!-- SLIDER WITH indicators -->
+        <div id="slider3" class=" carousel slide my-5" data-ride="carousel">
+            
+            <ol class="carousel-indicators carousel-indicators-numbers">
+                <li class="active" data-target="#slider3" data-slide-to="0">1</li>
+                <li data-target="#slider3" data-slide-to="1">2</li>
+                <li data-target="#slider3" data-slide-to="2">3</li>
+                <li data-target="#slider3" data-slide-to="3">4</li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active bg-light">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <img class="d-block img-fluid "
+                            src="./img/bagel.jpg"
+                            alt="First Slide"
+                            />
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <img
+                            class="d-block img-fluid "
+                            src="./img/divers-truc.jpg"
+                            alt="First Slide"
+                            />
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <img
+                            class="d-block img-fluid "
+                            src="./img/lait-verser.jpg"
+                            alt="First Slide"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item bg-light">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <img
+                            class="d-block img-fluid "
+                            src="./img/pain.jpg"
+                            alt="second Slide"
+                            />
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <img
+                            class="d-block img-fluid "
+                            src="./img/pizza.jpg"
+                            alt="second Slide"
+                            />
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <img
+                            class="d-block img-fluid "
+                            src="./img/sandwich.jpg"
+                            alt="second Slide"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item bg-light">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <img
+                            class="d-block img-fluid "
+                            src="./img/saumon-epinard.jpg"
+                            alt="third Slide"
+                            />
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <img
+                            class="d-block img-fluid "
+                            src="./img/thé-fromage.jpg"
+                            alt="third Slide"
+                            />
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <img
+                            class="d-block img-fluid "
+                            src="./img/tomate.jpg"
+                            alt="third Slide"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item bg-light">
+                    <div class="row">
+                        <div class="col-md-4 col-12">
+                            <img
+                            class="d-block img-fluid oeuf "
+                            src="./img/dej.jpg"
+                            alt="fourth Slide"
+                            />
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <img
+                            class="d-block img-fluid "
+                            src="./img/toast.jpg"
+                            alt="fourth Slide"
+                            />
+                        </div>
+                        <div class="col-md-4 col-12">
+                            <img
+                            class="d-block img-fluid repas "
+                            src="./img/break.jpg"
+                            alt="fourth Slide"
+                            />
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- controls -->
+            <a href="#slider3" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#slider3" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer id="main-footer" class="bg-dark text-white text-center p-3">
+    <div class="row">
+        <div class="col">
+        <p>Copyright &copy; <span id="year"></span> A table</p>
+        </div>
+    </div>
+    </footer>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+    ></script>
+    <!-- extra js -->
+    <script>
+    // jquery script to get the current year (eg. for copyright)
+    // use <span id="year"></span> to get the year in the html code
+    $("#year").text(new Date().getFullYear());
+    </script>
+</body>
+</html>

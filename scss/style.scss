@@ -10,6 +10,30 @@ $font-family-sans-serif: "Exo", sans-serif;
 @import "./bootstrap/bootstrap.scss";
 
 //  styles perso ici
+//carousel
+.carousel-item {
+  /*border: solid 5px;*/
+  padding: 10%;
+  border: solid 1px #80deea;
+}
+.carousel-indicators li {
+  text-indent: 0;
+  margin: 0 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  line-height: 30px;
+  color: #fff;
+  background-color:blue ;
+  &.active {
+    background-color: #b3e5fc;
+  }
+}
+.col-md-2 {
+  font-size: 3em;
+  font-family: "Exo", sans-serif;
+  margin-top: 2%;
+}
 
 // navbar
 .navbar {
@@ -19,3 +43,4 @@ $font-family-sans-serif: "Exo", sans-serif;
     border-left: $white 3px solid;
   }
 }
+
