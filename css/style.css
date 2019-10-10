@@ -10316,48 +10316,25 @@ a.text-dark:hover, a.text-dark:focus {
   border-left: #fff 3px solid;
 }
 
-#mapBoxCharleroi {
+.mapBox {
   overflow: hidden;
   border: 1px solid transparent;
-  -webkit-transition: border 2s;
-  transition: border 2s;
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
 }
 
-#mapBoxCharleroi:hover {
-  border: 1px solid grey;
+.mapBox:hover {
+  border: 1px solid #b0bec5;
 }
 
-#mapCharleroi {
+.mapImg {
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
 }
 
-#mapCharleroi:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
-}
-
-#mapBoxBrussels {
-  overflow: hidden;
-  border: 1px solid transparent;
-  -webkit-transition: border 2s;
-  transition: border 2s;
-}
-
-#mapBoxBrussels:hover {
-  border: 1px solid grey;
-}
-
-#mapBrussels {
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-}
-
-#mapBrussels:hover {
+.mapImg:hover {
   -webkit-transform: scale(2);
           transform: scale(2);
 }
