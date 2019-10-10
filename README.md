@@ -8,10 +8,12 @@ Projet créé le 07 Octobre 2019 dans le cadre de la formation Web Developer don
 
 Le projet est réalisé sur base des [instructions données](https://github.com/becodeorg/CRL-Woods-2.15/blob/master/Projects/BootstrapProject/projet.md).
 
+Le projet est accessible sur sa propre [GitHub page](https://debourgeo.github.io/restaurant-css-framework/index.html)
+
 - [x] Codebase formated by [Prettier](https://prettier.io/)
 - [x] Html validated by [W3C Markup Validation Service](https://validator.w3.org)
 
-### **A Table**
+### **[A Table](https://debourgeo.github.io/restaurant-css-framework/index.html)**
 
 Le Projet consiste en un site Bootstrap de 5 pages, pésentant notre concept de restaurant nommé **A Table**.
 
