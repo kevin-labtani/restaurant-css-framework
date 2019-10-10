@@ -35,6 +35,7 @@ Vous pouvez retrouver chez nous toutes sortes de pâtisseries, des bagels, des t
 
 - **Christophe** (en charge de la gallerie):
   - J'ai appris un faire un carousel avec bootstrap et à y apporter certaines modifications.
+  - Suite à un audit **Google Lighthouse** da la page _photos.html_ j'ai rencontré des problèmes au niveau de l'accessibilité mais que je n'ai su résoudre, ces problèmes étaient causés par des classes boostrap que je ne pouvais pas changé(ou ne voyais pas comment).
 ## Langages
 
 Projet réalisé entièrement en HTML, Sass & jQuery
