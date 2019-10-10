@@ -34,9 +34,6 @@ Vous pouvez retrouver chez nous toutes sortes de pâtisseries, des bagels, des t
   - De plus, suite à l'audit, j'ai rajouté un tag `meta description`.
   - J'ai aussi appris à générer et utiliser une _favicon_.
 
-- **Christophe** (en charge de la gallerie):
-  - J'ai appris un faire un carousel avec bootstrap et à y apporter certaines modifications.
-  - Suite à un audit **Google Lighthouse** da la page _photos.html_ j'ai rencontré des problèmes au niveau de l'accessibilité mais que je n'ai su résoudre, ces problèmes étaient causés par des classes boostrap que je ne pouvais pas changé(ou ne voyais pas comment).
 - **Denis** (en charge de la page _carte_ et de la page _restaurants_):
 
   - J'ai utilisé pour ces pages un mélange de _container_, _lists-groups_ et de _cards_. Bien qu'étant un peu limité par les standards _bootstrap_, le résultat reste bon.
@@ -46,10 +43,15 @@ Vous pouvez retrouver chez nous toutes sortes de pâtisseries, des bagels, des t
   - Penser à limiter le nombre de "Hacks" utilisé pour parvenir à un résultat attendu.
 
 - **Gaby** (en charge de la page acceuil, du logo et du graphisme en général)
+
   - Nous sommes partis sur un design simple et minimaliste.
   - J'ai appris à utiliser `jumbotron` et les `card`
   - J'ai utilisé des `row` et des `col` dans des `container` pour mes `card` pour pouvoir faire la disposition voulue.
   - L'utilisation de Git se passe relativement bien, mais j'ai toujours peur de faire une bétise et de mettre tout le groupe dans l'embarras.
+
+- **Christophe** (en charge de la gallerie):
+  - J'ai appris un faire un carousel avec bootstrap et à y apporter certaines modifications.
+  - Suite à un audit **Google Lighthouse** da la page _photos.html_ j'ai rencontré des problèmes au niveau de l'accessibilité mais que je n'ai su résoudre, ces problèmes étaient causés par des classes boostrap que je ne pouvais pas changé(ou ne voyais pas comment).
 
 ## Langages
 
